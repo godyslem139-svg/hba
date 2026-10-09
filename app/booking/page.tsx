@@ -9,7 +9,7 @@ export default function BookingPage() {
     fullName: '',
     email: '',
     phone: '',
-    service: 'rhinoplasty',
+    service: 'chronic-diseases', // تم تعديل القيمة الافتراضية
     preferredDate: '',
     notes: ''
   });
@@ -23,8 +23,7 @@ export default function BookingPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // جاهز لربطه مستقبلاً بخدمة إرسال الإيميلات (مثل EmailJS أو Resend أو API خاص بك)
-    // مثال:
+    // جاهز لربطه مستقبلاً بخدمة إرسال الإيميلات
     // await fetch('/api/send-email', { method: 'POST', body: JSON.stringify(formData) });
 
     setIsSubmitted(true);
@@ -33,10 +32,10 @@ export default function BookingPage() {
   return (
     <>
       <Head>
-        <title>حجز استشارة تجميلية خاصة | د. أحمد عبد الرحمن</title>
+        <title>حجز استشارة طبية | د. هالة نجيب محمد سليم</title>
         <meta 
           name="description" 
-          content="احجز موعد استشارتك الخاصة الآن مع الدكتور أحمد عبد الرحمن استشاري جراحات التجميل والترميم. ابدأ خطوتك الأولى نحو المظهر المثالي بأعلى معايير الأمان." 
+          content="احجز موعد استشارتك الآن مع الدكتورة هالة نجيب محمد سليم، استشاري أمراض الباطنة والقلب والأوعية الدموية. رعاية طبية متكاملة بأعلى معايير الأمان." 
         />
       </Head>
 
@@ -45,7 +44,7 @@ export default function BookingPage() {
         <div className="max-w-3xl mx-auto mb-8">
           <Link 
             href="/" 
-            title="العودة إلى الصفحة الرئيسية لموقع دكتور أحمد عبد الرحمن"
+            title="العودة إلى الصفحة الرئيسية لموقع دكتورة هالة سليم"
             className="inline-flex items-center gap-2 text-white/80 hover:text-medical-light transition-colors text-sm font-medium bg-white/10 px-4 py-2 rounded-full backdrop-blur-md"
           >
             ← العودة للرئيسية
@@ -58,13 +57,13 @@ export default function BookingPage() {
 
           <div className="text-center mb-10">
             <span className="text-medical-dark font-semibold text-xs tracking-widest uppercase bg-medical-light/20 px-4 py-1.5 rounded-full">
-              VIP Consultation
+              Medical Consultation
             </span>
             <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4 mb-2">
-              احجز استشارتك الخاصة
+              احجز استشارتك الطبية
             </h1>
             <p className="text-slate-600 text-sm md:text-base max-w-md mx-auto">
-              خطوتك الأولى نحو المظهر المثالي. املأ البيانات وسيتواصل معك المنسق الشخصي لدكتور أحمد عبد الرحمن.
+              خطوتك الأولى نحو صحة أفضل. املأ البيانات وسيتواصل معك المنسق الشخصي لعيادة د. هالة سليم.
             </p>
           </div>
 
@@ -135,7 +134,7 @@ export default function BookingPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="service" className="block text-sm font-semibold text-slate-700 mb-2">نوع الإجراء التجميلي</label>
+                  <label htmlFor="service" className="block text-sm font-semibold text-slate-700 mb-2">نوع الكشف أو الاستشارة</label>
                   <select
                     id="service"
                     name="service"
@@ -143,11 +142,12 @@ export default function BookingPage() {
                     onChange={handleChange}
                     className="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-medical-dark/60 bg-slate-50/50 text-slate-800 transition-all text-sm cursor-pointer"
                   >
-                    <option value="rhinoplasty">تجميل الأنف الجراحي (Rhinoplasty)</option>
-                    <option value="body-contouring">نحت القوام وشد البطن (Liposuction)</option>
-                    <option value="facial">إعادة نضارة وتجديد شباب الوجه</option>
-                    <option value="breast">جراحات الثدي التجميلية</option>
-                    <option value="non-surgical">إجراءات غير جراحية (فيلر وبوتوكس)</option>
+                    <option value="chronic-diseases">متابعة الأمراض المزمنة (السكر، الضغط، الكوليسترول)</option>
+                    <option value="stomach-colon">تشخيص ومتابعة أمراض المعدة والقولون والارتجاع</option>
+                    <option value="liver-digestive">أمراض الكبد والمرارة والجهاز الهضمي</option>
+                    <option value="heart-chest">تقييم حالات القلب والصدر</option>
+                    <option value="blood-immunity">أمراض الدم والمناعة</option>
+                    <option value="general-internal">تقييم الحالات الباطنية الشاملة</option>
                   </select>
                 </div>
               </div>
@@ -168,14 +168,14 @@ export default function BookingPage() {
               </div>
 
               <div>
-                <label htmlFor="notes" className="block text-sm font-semibold text-slate-700 mb-2">ملاحظات إضافية (اختياري)</label>
+                <label htmlFor="notes" className="block text-sm font-semibold text-slate-700 mb-2">ملاحظات إضافية أو الأعراض (اختياري)</label>
                 <textarea
                   id="notes"
                   name="notes"
                   rows={3}
                   value={formData.notes}
                   onChange={handleChange}
-                  placeholder="أخبرنا باهتماماتك أو توقعاتك للعملية..."
+                  placeholder="أخبرنا باختصار عن الأعراض التي تعاني منها أو أي تاريخ مرضي..."
                   className="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-medical-dark/60 bg-slate-50/50 text-slate-800 transition-all text-sm resize-none"
                 />
               </div>
