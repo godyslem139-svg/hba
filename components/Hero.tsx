@@ -5,7 +5,6 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section className="relative min-h-screen py-20 flex items-center justify-center overflow-hidden bg-slate-900" dir="rtl">
-      {/* خلفية الفيديو المحلي من مجلد public */}
       <div className="absolute inset-0 z-0 opacity-40">
         <video
           autoPlay
@@ -19,10 +18,8 @@ export default function Hero() {
         </video>
       </div>
 
-      {/* تدرج لوني فخم من ألوان الهوية */}
       <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-[#0082a9]/50 to-transparent z-10" />
 
-      {/* محتوى الهيرو */}
       <div className="relative z-20 max-w-5xl mx-auto px-6 text-center text-white my-auto">
         <span className="inline-block py-1.5 px-5 mb-6 rounded-full bg-[#5bc0de]/20 backdrop-blur-md border border-[#5bc0de]/40 text-sm font-medium tracking-wide uppercase shadow-lg">
           رعاية صحية متكاملة وخبرة متقدمة
@@ -37,7 +34,6 @@ export default function Hero() {
           نقدم رعاية طبية شاملة ومتميزة لمتابعة الأمراض المزمنة، الجهاز الهضمي، وصحة القلب بأحدث الطرق التشخيصية والعلاجية.
         </p>
 
-        {/* عرض التخصصات والخدمات بشكل أنيق داخل قسم الهيرو */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-w-4xl mx-auto mb-10 text-right text-sm">
           <div className="bg-white/10 backdrop-blur-md p-3.5 rounded-xl border border-white/20 flex items-center gap-2.5 shadow-sm">
             <span className="text-[#5bc0de] font-bold">✓</span>
@@ -65,9 +61,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* أزرار الإجراءات */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          {/* زر الانتقال المباشر للواتساب بالحجز */}
           <a
             href="https://wa.me/966537028009"
             target="_blank"

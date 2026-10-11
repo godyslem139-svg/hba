@@ -33,7 +33,6 @@ export default function ChronicDiseasesPage() {
   return (
     <div className="min-h-screen bg-slate-50 text-right text-slate-900 font-sans" dir="rtl">
       
-      {/* 1. الهيرو سكشن (Hero Section) مع فيديو chronic-diseases-followup.mp4 */}
       <section className="relative h-[85vh] min-h-[600px] w-full flex items-center justify-center overflow-hidden bg-slate-950">
         <video
           autoPlay

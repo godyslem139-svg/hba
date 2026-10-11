@@ -57,7 +57,6 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* أزرار سطح المكتب (حجز + همبرجر للموبايل) */}
         <div className="flex items-center gap-3">
           <a
             href="https://wa.me/966537028009"
@@ -72,7 +71,6 @@ export default function Header() {
             </svg>
           </a>
 
-          {/* زر همبرجر الموبايل */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             title="فتح أو إغلاق القائمة الرئيسية"
@@ -90,11 +88,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/* القسم الثاني (تحت للشاشات الكبيرة): رقم الهاتف وأيقونات التواصل (واتساب وانستجرام) */}
       <div className="hidden lg:flex bg-[#5bc0de] px-6 py-3.5 items-center justify-between gap-4 relative overflow-hidden border-b-4 border-[#0082a9]">
         <div className="absolute -right-10 -top-10 w-40 h-40 bg-white/25 rounded-full blur-2xl pointer-events-none" />
         
-        {/* رقم الهاتف */}
         <a 
           href="tel:+966537028009" 
           title="الاتصال المباشر بعيادة الدكتورة هالة نجيب عبر الهاتف"
@@ -106,7 +102,6 @@ export default function Header() {
           <span>+966 53 702 8009</span>
         </a>
 
-        {/* أيقونات التواصل الاجتماعي */}
         <div className="flex items-center gap-3">
           <a 
             href="https://wa.me/966537028009" 
@@ -132,7 +127,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* قائمة الموبايل المنسدلة (تظهر عند النقر على الهمبرجر) */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#0082a9] border-t border-white/15 px-6 py-6 space-y-5 text-white shadow-2xl transition-all animate-fadeIn">
           <nav className="flex flex-col space-y-3.5 text-base font-bold">
@@ -178,7 +172,6 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* زر الحجز السريع للموبايل داخل المنيو */}
           <div className="pt-2">
             <a
               href="https://wa.me/966537028009"
@@ -192,7 +185,6 @@ export default function Header() {
             </a>
           </div>
 
-          {/* رقم الهاتف والتواصل داخل قائمة الموبايل */}
           <div className="pt-4 border-t border-white/15 space-y-3">
             <a 
               href="tel:+966537028009" 
@@ -227,7 +219,6 @@ export default function Header() {
         </div>
       )}
 
-      {/* تأثير التوهج السفلي */}
       <div className="absolute -bottom-2 left-0 right-0 h-4 bg-[#5bc0de] blur-md opacity-85 pointer-events-none" />
 
     </header>

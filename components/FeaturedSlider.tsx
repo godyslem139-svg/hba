@@ -30,7 +30,6 @@ export default function FeaturedSlider() {
   return (
     <section className="relative h-[650px] w-full flex items-center justify-center overflow-hidden text-right" dir="rtl">
       
-      {/* 1. الصورة الخلفية */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/k.webp"
@@ -40,17 +39,13 @@ export default function FeaturedSlider() {
           className="object-cover object-center filter brightness-90"
           priority
         />
-        {/* طبقة العتمة الداكنة */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-950/90" />
       </div>
 
-      {/* 2. الإطار والخطوط البيضاء المتقطعة (Grid Blueprint Effect) */}
       <div className="absolute inset-8 md:inset-12 border border-dashed border-white/30 z-10 pointer-events-none flex flex-col justify-between">
-        {/* خط طولي متقطع في المنتصف (اختياري لمزيد من الدقة) */}
         <div className="absolute inset-y-0 left-1/2 border-r border-dashed border-white/10 hidden md:block" />
       </div>
 
-      {/* 3. محتوى السكشن */}
       <div className="relative z-20 max-w-4xl mx-auto px-6 text-center text-white">
         
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 text-white drop-shadow-lg">
@@ -73,7 +68,6 @@ export default function FeaturedSlider() {
           </a>
         </div>
 
-        {/* مؤشرات النقاط */}
         <div className="flex items-center justify-center gap-2 mt-10">
           {slides.map((_, index) => (
             <button
@@ -90,7 +84,6 @@ export default function FeaturedSlider() {
 
       </div>
 
-      {/* أزرار التنقل يمين ويسار */}
       <button
         onClick={prevSlide}
         title="الانتقال إلى الشريحة السابقة"
