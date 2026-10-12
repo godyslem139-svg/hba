@@ -27,7 +27,7 @@ export default function Hero() {
         
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight">
           د. هالة نجيب محمد سليم <br />
-          <span className="text-[#5bc0de] drop-shadow-md">استشاري أمراض الباطنة والقلب والأوعية الدموية</span>
+          <span className="text-[#5bc0de] drop-shadow-md">نايب اول أمراض الباطنة والقلب والأوعية الدموية</span>
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-100 mb-8 font-light leading-relaxed">

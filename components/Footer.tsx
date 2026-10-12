@@ -34,7 +34,7 @@ export default function Footer() {
                   د. هالة نجيب محمد سليم
                 </span>
                 <span className="text-xs font-light text-[#5bc0de]">
-                  استشاري أمراض الباطنة والقلب والأوعية الدموية
+                  نايب اول أمراض الباطنة والقلب والأوعية الدموية
                 </span>
               </div>
             </Link>

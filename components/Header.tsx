@@ -33,7 +33,7 @@ export default function Header() {
               د. هالة نجيب محمد سليم
             </span>
             <span className="text-[11px] md:text-xs font-light text-white/90">
-              استشاري أمراض الباطنة والقلب والأوعية الدموية
+              نايب اول أمراض الباطنة والقلب والأوعية الدموية
             </span>
           </div>
         </Link>

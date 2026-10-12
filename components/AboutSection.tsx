@@ -16,8 +16,8 @@ export default function AboutSection() {
               <div className="relative h-[450px] w-full rounded-2xl overflow-hidden bg-slate-100">
                 <Image
                   src="/about.webp"
-                  alt="د. هالة نجيب محمد سليم استشاري أمراض الباطنة والقلب والأوعية الدموية"
-                  title="الدكتورة هالة نجيب محمد سليم - استشاري أمراض الباطنة والقلب"
+                  alt="د. هالة نجيب محمد سليم نايب اول أمراض الباطنة والقلب والأوعية الدموية"
+                  title="الدكتورة هالة نجيب محمد سليم - نايب اول أمراض الباطنة والقلب"
                   fill
                   className="object-cover"
                 />
@@ -33,7 +33,7 @@ export default function AboutSection() {
 
         <div className="lg:col-span-7 space-y-6">
           <span className="inline-block text-[#0082a9] font-semibold text-xs tracking-widest uppercase bg-[#5bc0de]/20 px-4 py-1.5 rounded-full">
-            تعرف على استشاري الباطنة والقلب
+            تعرف على نايب اول الباطنة والقلب
           </span>
 
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
@@ -42,7 +42,7 @@ export default function AboutSection() {
           </h2>
 
           <p className="text-slate-600 text-base md:text-lg leading-relaxed font-light">
-            تُعد د. هالة نجيب محمد سليم واحدة من أبرز استشاريي أمراض الباطنة والقلب والأوعية الدموية. تتميز بخبرة عميقة في تشخيص وعلاج الأمراض المزمنة، اضطرابات الجهاز الهضمي، وتقييم حالات القلب والصدر بأعلى معايير الدقة والاهتمام بالمريض.
+            تُعد د. هالة نجيب محمد سليم واحدة من أبرز نايبين اول أمراض الباطنة والقلب والأوعية الدموية. تتميز بخبرة عميقة في تشخيص وعلاج الأمراض المزمنة، اضطرابات الجهاز الهضمي، وتقييم حالات القلب والصدر بأعلى معايير الدقة والاهتمام بالمريض.
           </p>
 
           <p className="text-slate-600 text-base md:text-lg leading-relaxed font-light">
